@@ -1,0 +1,69 @@
+.animationSun img {
+  position: relative;
+  z-index: -20 !important;
+  animation: bounce 8s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in-out;
+  }
+  25% {
+    transform: translateY(-30px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(-60px);
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: translateY(-30px);
+    animation-timing-function: ease-in;
+  }
+}
+
+.animationCloud {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow-x: hidden !important;
+  z-index: -10 !important;
+}
+
+.animationCloud img {
+  position: absolute;
+  left: 100%;
+  width: 100%; /* Sesuaikan dengan ukuran awan */
+  height: auto;
+  transform: translateY(-50%);
+  background-repeat: repeat-x;
+  background-size: contain;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: -30s;
+  opacity: 1;
+  animation: moveClouds 25s linear infinite;
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+.btn-shadow {
+  font-weight: 700;
+  text-align: center;
+
+  color: #fff;
+  background-color: #f916a8;
+  border: 1px solid transparent;
+  transition: all 0.3s ease 0s, transform 0.5s ease 0s;
+  box-shadow: rgba(255, 0, 131, 0.5) 0px 18px 50px -8px;
+}
