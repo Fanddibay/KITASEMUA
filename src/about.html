@@ -21,22 +21,45 @@
     <!-- navbar mobile -->
     <nav class="bg-white py-3 px-1 block md:hidden">
       <div class="flex justify-between items-center">
-        <a href="index.html" class="w-[40%]"
-          ><img src="assets/KITASEMUA_FullColor.png" alt=""
-        /></a>
-        <div>
+        <a href="index.html" class="w-[40%]">
+          <img src="assets/KITASEMUA_FullColor.png" alt="" />
+        </a>
+        <div class="mx-auto justify-center">
           <a
             href="about.html"
             class="text-base text-text-color hover:text-pink-custom"
             >About Us</a
           >
         </div>
-        <div class="flex gap-1 items-center">
-          <i class="fa-solid fa-globe"></i>
-          <select name="language" id="language">
-            <option value="idn">IDN</option>
-            <option value="idn">EN</option>
-          </select>
+        <div class="">
+          <div>
+            <button
+              id="dropdownButton1"
+              type="button"
+              class="flex gap-2 justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-base font-medium text-text-color-2"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              <img src="assets/EN.png" alt="IDN" class="h-5 w-5 mr-2" />
+              EN
+            </button>
+          </div>
+
+          <div
+            id="dropdownMenu1"
+            class="mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="aboutId.html"
+                class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                data-value="eng"
+              >
+                <img src="assets/ID.png" alt="EN" class="h-5 w-5 mr-2" />
+                IDN
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -58,12 +81,36 @@
               alt=""
           /></a>
         </div>
-        <div class="flex gap-1 items-center">
-          <i class="fa-solid fa-globe"></i>
-          <select name="language" id="language">
-            <option value="idn">IDN</option>
-            <option value="idn">EN</option>
-          </select>
+        <div></div>
+      </div>
+      <div class="absolute right-10 top-5">
+        <div>
+          <button
+            id="dropdownButton"
+            type="button"
+            class="flex gap-2 justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-base font-medium text-text-color-2"
+            aria-expanded="true"
+            aria-haspopup="true"
+          >
+            <img src="assets/EN.png" alt="IDN" class="h-5 w-5 mr-2" />
+            EN
+          </button>
+        </div>
+
+        <div
+          id="dropdownMenu"
+          class="mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+        >
+          <div class="py-1" role="none">
+            <a
+              href="aboutId.html"
+              class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              data-value="eng"
+            >
+              <img src="assets/ID.png" alt="EN" class="h-5 w-5 mr-2" />
+              IDN
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -75,12 +122,14 @@
         <!-- title text -->
         <div class="md:w-2/3 mx-auto">
           <h3
-            class="text-4xl md:text-7xl md:leading-[84px] tracking-wider font-bold"
+            class="text-5xl md:text-7xl md:leading-[84px] tracking-wider font-bold"
           >
             How <span class="text-pink-custom">KITASEMUA</span> Works
           </h3>
-          <p class="text-text-color-2 tracking-wider mt-4 text-base md:text-xl">
-            <span class="text-pink-custom font-bold">KITASEMUA</span> was born
+          <p
+            class="text-text-color-2 tracking-wider mt-4 text-lg md:text-xl font-light md:leading-[48px]"
+          >
+            <span class="text-pink-custom font-medium">KITASEMUA</span> was born
             from a simple idea to make insurance easy, affordable, and
             accessible for everyone. We use technology to simpifly the process.
             Eliminating the need for expensive agents and time-consuming
@@ -118,9 +167,11 @@
             class="w-1/3 md:w-[8%] mx-auto"
             alt=""
           />
-          <h4 class="mt-4 text-3xl font-bold text-pink-custom">Mision</h4>
+          <h4 class="mt-4 text-3xl mdtext-5xl font-bold text-pink-custom">
+            Mision
+          </h4>
           <p
-            class="md:w-[34%] px-4 md:px-0 text-center mx-auto mt-4 text-lg md:text-2xl"
+            class="md:w-[34%] px-4 md:px-0 text-center mx-auto mt-4 text-lg md:text-2xl text-light md:leading-10"
           >
             Our Mission is to provide accessible and reliable insurance services
             that cater to all individuals, regardless of their background or
@@ -133,8 +184,12 @@
             class="w-1/3 md:w-[8%] mx-auto mt-12"
             alt=""
           />
-          <h4 class="mt-4 text-3xl font-bold text-pink-custom">Vision</h4>
-          <p class="px-4 md:w-[34%] text-center mx-auto mt-4 text-2xl">
+          <h4 class="mt-4 text-3xl md:text-5xl font-bold text-pink-custom">
+            Vision
+          </h4>
+          <p
+            class="px-4 md:w-[34%] text-center mx-auto mt-4 text-lg md:text-2xl text-light md:leading-10"
+          >
             Our Vision is to create a world where everyone feels secure and
             supported
           </p>
@@ -150,10 +205,10 @@
     >
       <div>
         <div class="block md:flex gap-36 justify-center">
-          <div class="md:w-1/3 md:mb-0 mb-16">
+          <div class="md:mb-0 mb-16 md:w-[30%]">
             <img
-              src="assets/merakwan 1.png"
-              class="w-full h-[400px] bg-contain bg-center rounded-lg"
+              src="assets/mera.jpg"
+              class="w-full md:h-[550px] bg-contain bg-center rounded-lg"
               alt=""
             />
             <div class="mt-2">
@@ -177,10 +232,10 @@
               </div>
             </div>
           </div>
-          <div class="md:w-1/3">
+          <div class="md:w-[30%]">
             <img
-              src="assets/marcin4.jpg"
-              class="w-full h-[400px] bg-contain bg-center rounded-lg"
+              src="assets/marcin1.png"
+              class="w-full md:h-[550px] bg-contain bg-center rounded-lg"
               alt=""
             />
             <div class="mt-2">
@@ -206,12 +261,12 @@
           </div>
         </div>
         <div class="mt-24 border-t-2 border-[#E1E1E1] pt-4 pb-16">
-          <h5 class="text-center text-lg text-text-color mb-4">
+          <h5 class="text-center text-4xl text-text-color my-8">
             The Story of
             <span class="font-bold text-pink-custom">KITASEMUA</span>
           </h5>
           <p
-            class="text-center tracking-wide leading-[34px] text-sm md:w-full md:overflow-y-visible overflow-y-scroll h-[250px]"
+            class="text-center tracking-widest md:leading-[38px] text-base md:text-lg font-light md:w-full md:overflow-y-visible overflow-y-scroll h-[250px]"
           >
             Mera Kwan grew up in a tight-knit community where many realized that
             traditional insurance models often left vulnerable individuals
@@ -251,39 +306,53 @@
           <div class="md:w-1/3 mb-4 md:mb-0">
             <img
               src="assets/whiteLogo.png"
-              class="md:w-[250px] w-1/2 text-center"
+              class="md:w-[250px] w-1/2 text-center -ms-3"
               alt=""
             />
             <p class="text-base md:text-lg text-text-color-3">
-              KITASEMUA is an insurance company focused on providing services
-              for lower-middle-class communities in Indonesia.
+              KITASEMUA is a life insurance agency that collaborates with
+              renowned global insurance companies, enhancing services by
+              utilizing AI technology to simplify access to insurance for all
+              Indonesians. We believe that everyone deserves protection and
+              peace of mind in their lives.
             </p>
           </div>
           <div class="flex md:block justify-between items-start">
             <div class="md:mb-8">
               <h5 class="text-white-custom">Follow Us</h5>
               <div class="flex gap-6 mt-1">
-                <i
-                  class="fa-brands fa-instagram text-white hover:text-pink-custom"
-                ></i>
-                <i
-                  class="fa-brands fa-tiktok text-white hover:text-pink-custom"
-                ></i>
-                <i
-                  class="fa-brands fa-facebook text-white hover:text-pink-custom"
-                ></i>
+                <a href="#">
+                  <i
+                    class="fa-brands fa-instagram text-white hover:text-pink-custom"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-tiktok text-white hover:text-pink-custom"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook text-white hover:text-pink-custom"
+                  ></i
+                ></a>
               </div>
             </div>
             <div>
               <h5 class="text-white-custom">Contact Us</h5>
               <div class="md:flex gap-6">
-                <p class="text-white flex gap-2 items-center">
+                <a
+                  href="#"
+                  class="text-white flex gap-2 items-center hover:text-pink-custom"
+                >
                   <i class="fa-solid fa-location-dot"></i>Indonesia
-                </p>
+                </a>
 
-                <p class="text-white flex gap-2 items-center">
+                <p
+                  class="text-white flex gap-2 items-center hover:text-pink-custom"
+                >
                   <i class="fa-solid fa-envelope"></i>
-                  Team@KITASEMUA.com
+                  <a href="#">info@kitasemua.com</a>
                 </p>
               </div>
             </div>
@@ -321,4 +390,5 @@
     </footer>
     <!-- end hero footer -->
   </body>
+  <script src="main.js"></script>
 </html>

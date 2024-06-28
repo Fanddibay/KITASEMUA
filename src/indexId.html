@@ -21,19 +21,42 @@
     <nav class="bg-white py-3 px-1 block md:hidden">
       <div class="flex justify-between items-center">
         <img src="assets/KITASEMUA_FullColor.png" class="w-[40%]" alt="" />
-        <div>
+        <div class="mx-auto justify-center">
           <a
-            href="about.html"
+            href="aboutId.html"
             class="text-base text-text-color hover:text-pink-custom"
-            >About Us</a
+            >Tentang Kita</a
           >
         </div>
-        <div class="flex gap-1 items-center">
-          <i class="fa-solid fa-globe"></i>
-          <select name="language" id="language">
-            <option value="idn">IDN</option>
-            <option value="idn">EN</option>
-          </select>
+        <div class="">
+          <div>
+            <button
+              id="dropdownButton1"
+              type="button"
+              class="flex gap-2 justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-base font-medium text-text-color-2"
+              aria-expanded="true"
+              aria-haspopup="true"
+            >
+              <img src="assets/ID.png" alt="IDN" class="h-5 w-5 mr-2" />
+              IDN
+            </button>
+          </div>
+
+          <div
+            id="dropdownMenu1"
+            class="mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+          >
+            <div class="py-1" role="none">
+              <a
+                href="Index.html"
+                class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                data-value="eng"
+              >
+                <img src="assets/EN.png" alt="EN" class="h-5 w-5 mr-2" />
+                EN
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -42,25 +65,49 @@
       <div class="justify-between flex items-center">
         <div>
           <a
-            href="about.html"
+            href="aboutId.html"
             class="text-base text-text-color hover:text-pink-custom"
-            >About Us</a
+            >Tentang Kita</a
           >
         </div>
         <div>
-          <a href="index.html"
+          <a href="indexId.html"
             ><img
               src="assets/KITASEMUA_FullColor.png"
               class="w-[210px] h-[70px]"
               alt=""
           /></a>
         </div>
-        <div class="flex gap-1 items-center">
-          <i class="fa-solid fa-globe"></i>
-          <select name="language" id="language">
-            <option value="idn">IDN</option>
-            <option value="idn">EN</option>
-          </select>
+        <div></div>
+      </div>
+      <div class="absolute right-10 top-5">
+        <div>
+          <button
+            id="dropdownButton"
+            type="button"
+            class="flex gap-2 justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-base font-medium text-text-color-2"
+            aria-expanded="true"
+            aria-haspopup="true"
+          >
+            <img src="assets/ID.png" alt="IDN" class="h-5 w-5 mr-2" />
+            IDN
+          </button>
+        </div>
+
+        <div
+          id="dropdownMenu"
+          class="mt-2 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+        >
+          <div class="py-1" role="none">
+            <a
+              href="index.html"
+              class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              data-value="eng"
+            >
+              <img src="assets/EN.png" alt="EN" class="h-5 w-5 mr-2" />
+              EN
+            </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -74,11 +121,10 @@
           <h3
             class="text-5xl md:text-7xl md:leading-[84px] tracking-tight font-bold"
           >
-            <span class="text-pink-custom">Insurance</span> for All, <br />
-            <span class="text-pink-custom">Life</span> for Everyone
+            <span class="text-pink-custom">Asuransi</span> untuk KITASEMUA
           </h3>
-          <p class="text-text-color-3 tracking-wid mt-4">
-            Insurance Should Be This Easy, Instant Everything!
+          <p class="text-text-color-3 tracking-wid mt-4 text-lg">
+            Asuransi Mudah, Terjangkau, Tanpa Ribet!
           </p>
         </div>
         <!-- input -->
@@ -87,13 +133,13 @@
             <input
               type="email"
               class="border border-stone-300 md:w-[450px] p-5 rounded-s-md"
-              placeholder="Input Your Email"
+              placeholder="Masukan Email Anda"
             />
             <button
               type="submit"
               class="bg-pink-custom btn-shadow hover:bg-pink-hover md:p-5 text-white rounded-e-md text-sm px-2 md:text-xl font-medium"
             >
-              Notify Me
+              Begabung
             </button>
           </form>
         </div>
@@ -141,14 +187,14 @@
         class="bg-white px-6 md:px-0 pt-8 md:pt-12 text-center border-t-2 border-text-color-1 -mb-2 md:-mb-4"
       >
         <h5 class="font-medium text-xl md:text-4xl text-text-color">
-          A Tiny Price, Hugh Sign Relief
+          Solusi asuransi terbaik untuk
         </h5>
         <p class="font-bold text-4xl md:text-5xl text-text-color">
-          Instant Everything
+          Anda dan Keluarga
         </p>
         <img
-          src="assets/hero_bottom.png"
-          class="md:w-[60%] md:h-full h-[250px] mt-6 md:mt-24 mx-auto"
+          src="assets/hero_bottomId.png"
+          class="md:w-[60%] md:h-full h-[280px] mt-6 md:mt-24 mx-auto"
           alt=""
         />
       </div>
@@ -165,39 +211,53 @@
           <div class="md:w-1/3 mb-4 md:mb-0">
             <img
               src="assets/whiteLogo.png"
-              class="md:w-[250px] w-1/2 text-center"
+              class="md:w-[250px] w-1/2 text-center -ms-3"
               alt=""
             />
             <p class="text-base md:text-lg text-text-color-3">
-              KITASEMUA is an insurance company focused on providing services
-              for lower-middle-class communities in Indonesia.
+              KITASEMUA adalah agen asuransi jiwa yang bekerja sama dengan
+              perusahaan asuransi ternama dunia, menyempurnakan layanan dengan
+              menggunakan teknologi AI untuk mempermudah akses asuransi bagi
+              seluruh masyarakat Indonesia. Kami percaya bahwa setiap orang
+              berhak mendapatkan perlindungan dan rasa aman dalam hidup mereka.
             </p>
           </div>
           <div class="flex md:block justify-between items-start">
             <div class="md:mb-8">
-              <h5 class="text-white-custom">Follow Us</h5>
+              <h5 class="text-white-custom">Ikuti Kita</h5>
               <div class="flex gap-6 mt-1">
-                <i
-                  class="fa-brands fa-instagram text-white hover:text-pink-custom"
-                ></i>
-                <i
-                  class="fa-brands fa-tiktok text-white hover:text-pink-custom"
-                ></i>
-                <i
-                  class="fa-brands fa-facebook text-white hover:text-pink-custom"
-                ></i>
+                <a href="#">
+                  <i
+                    class="fa-brands fa-instagram text-white hover:text-pink-custom"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-tiktok text-white hover:text-pink-custom"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-brands fa-facebook text-white hover:text-pink-custom"
+                  ></i
+                ></a>
               </div>
             </div>
             <div>
-              <h5 class="text-white-custom">Contact Us</h5>
+              <h5 class="text-white-custom">Kontak</h5>
               <div class="md:flex gap-6">
-                <p class="text-white flex gap-2 items-center">
+                <a
+                  href="#"
+                  class="text-white flex gap-2 items-center hover:text-pink-custom"
+                >
                   <i class="fa-solid fa-location-dot"></i>Indonesia
-                </p>
+                </a>
 
-                <p class="text-white flex gap-2 items-center">
+                <p
+                  class="text-white flex gap-2 items-center hover:text-pink-custom"
+                >
                   <i class="fa-solid fa-envelope"></i>
-                  Team@KITASEMUA.com
+                  <a href="#">info@kitasemua.com</a>
                 </p>
               </div>
             </div>
@@ -209,13 +269,13 @@
                 <input
                   type="email"
                   class="border border-stone-300 w-[300px] h-[50px] p-5 rounded-s-md"
-                  placeholder="Input Your Email"
+                  placeholder="Masukan Email Anda"
                 />
                 <button
                   type="submit"
                   class="bg-pink-custom hover:bg-pink-hover h-[50px] w-full md:w-1/3 px-3 text-white rounded-e-md md:text-base font-medium"
                 >
-                  Notify Me
+                  Bergabung
                 </button>
               </form>
             </div>
