@@ -686,12 +686,12 @@ video {
   height: 13rem;
 }
 
-.h-\[250px\] {
-  height: 250px;
+.h-\[220px\] {
+  height: 220px;
 }
 
-.h-\[280px\] {
-  height: 280px;
+.h-\[250px\] {
+  height: 250px;
 }
 
 .h-\[50px\] {
@@ -700,6 +700,14 @@ video {
 
 .h-\[70px\] {
   height: 70px;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[480px\] {
+  height: 480px;
 }
 
 .w-1\/2 {
@@ -760,10 +768,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .gap-2 {
@@ -939,8 +943,8 @@ video {
   padding-bottom: 2rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pt-12 {
@@ -1011,8 +1015,12 @@ video {
   font-weight: 500;
 }
 
-.leading-\[38px\] {
-  line-height: 38px;
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .tracking-tight {
@@ -1095,7 +1103,15 @@ video {
 
 body {
   background-color: #f9f9f9 !important;
-  font-family: "Poppins", sans-serif;
+}
+
+nav,
+header {
+  font-family: "Merriweather", serif;
+}
+
+main {
+  font-family: "Museo Sans", serif;
 }
 
 .hover\:bg-gray-100:hover {
@@ -1184,6 +1200,18 @@ body {
     height: 100%;
   }
 
+  .md\:h-\[450px\] {
+    height: 450px;
+  }
+
+  .md\:h-\[30px\] {
+    height: 30px;
+  }
+
+  .md\:h-\[480px\] {
+    height: 480px;
+  }
+
   .md\:w-1\/3 {
     width: 33.333333%;
   }
@@ -1232,6 +1260,34 @@ body {
     width: 100%;
   }
 
+  .md\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .md\:w-\[0\%\] {
+    width: 0%;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .md\:w-\[20\%\] {
+    width: 20%;
+  }
+
+  .md\:w-\[25\%\] {
+    width: 25%;
+  }
+
+  .md\:w-\[330px\] {
+    width: 330px;
+  }
+
+  .md\:w-\[3000px\] {
+    width: 3000px;
+  }
+
   .md\:overflow-y-visible {
     overflow-y: visible;
   }
@@ -1257,6 +1313,10 @@ body {
 
   .md\:py-24 {
     padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .md\:pb-24 {
     padding-bottom: 6rem;
   }
 
@@ -1303,12 +1363,17 @@ body {
     line-height: 1.75rem;
   }
 
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:leading-10 {
     line-height: 2.5rem;
   }
 
-  .md\:leading-\[201px\] {
-    line-height: 201px;
+  .md\:leading-\[38px\] {
+    line-height: 38px;
   }
 
   .md\:leading-\[48px\] {
@@ -1317,9 +1382,5 @@ body {
 
   .md\:leading-\[84px\] {
     line-height: 84px;
-  }
-
-  .md\:leading-\[38px\] {
-    line-height: 38px;
   }
 }
