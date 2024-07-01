@@ -3,14 +3,10 @@
 @tailwind utilities;
 
 body {
-  background-color: #f9f9f9 !important;
-}
-
-nav,
-header {
-  font-family: "Merriweather", Georgia, serif;
-}
-
-main {
+  background-color: #fff !important;
   font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.heroText {
+  font-family: "Merriweather", Georgia, serif;
 }

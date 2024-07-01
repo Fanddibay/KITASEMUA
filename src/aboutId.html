@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- navbar mobile -->
-    <nav class="bg-white py-3 px-1 block md:hidden">
+    <nav class="bg-white py-3 px-1 block lg:hidden fixed z-10" id="navbar1">
       <div class="flex justify-between items-center">
         <a href="indexId.html" class="w-[40%]">
           <img src="assets/KITASEMUA_FullColor.png" alt="" />
@@ -64,7 +64,10 @@
       </div>
     </nav>
     <!-- navbar dekstop-->
-    <nav class="bg-white py-3 px-8 hidden md:block">
+    <nav
+      class="bg-white py-3 px-8 fixed top-0 left-0 right-0 z-10 lg:block hidden"
+      id="navbar"
+    >
       <div class="justify-between flex items-center">
         <div>
           <a
@@ -118,17 +121,20 @@
 
     <header>
       <!-- hero -->
-      <section id="hero" class="py-4 px-5 md:px-0 md:py-24 bg-[#fff]">
+      <section
+        id="hero"
+        class="pt-24 px-5 lg:px-0 lg:pt-56 bg-[#fff] md:pb-48 pb-12"
+      >
         <div class="text-center mb-12">
           <!-- title text -->
-          <div class="md:w-2/3 mx-auto">
+          <div class="lg:w-2/3 mx-auto">
             <h3
-              class="text-5xl md:text-7xl md:leading-[84px] tracking-wider font-bold"
+              class="text-4xl lg:text-6xl lg:leading-[62px] tracking-wider font-medium heroText text-text-color-2"
             >
               How <span class="text-pink-custom">KITASEMUA</span> Works
             </h3>
             <p
-              class="text-text-color-2 tracking-wider mt-4 text-lg md:text-xl font-light md:leading-[48px]"
+              class="text-text-color-2 tracking-wider mt-4 text-lg font-light lg:leading-[32px]"
             >
               <span class="text-pink-custom font-medium">KITASEMUA</span> was
               born from a simple idea to make insurance easy, affordable, and
@@ -144,12 +150,12 @@
             <form action="#" class="inline-flex">
               <input
                 type="email"
-                class="border border-stone-300 md:w-[450px] p-5 rounded-s-md"
+                class="border border-stone-300 lg:w-[450px] p-5 rounded-s-md"
                 placeholder="Input Your Email"
               />
               <button
                 type="submit"
-                class="bg-pink-custom btn-shadow hover:bg-pink-hover md:p-5 text-white rounded-e-md text-sm px-2 md:text-xl font-medium"
+                class="bg-pink-custom btn-shadow hover:bg-pink-hover lg:p-5 text-white rounded-e-md text-sm px-2 lg:text-xl font-medium"
               >
                 Notify Me
               </button>
@@ -167,14 +173,12 @@
           <div class="text-center mx-auto">
             <img
               src="assets/mission.png"
-              class="w-1/3 md:w-[8%] mx-auto"
+              class="w-1/3 lg:w-[8%] mx-auto"
               alt=""
             />
-            <h4 class="mt-4 text-3xl md:text-5xl font-bold text-pink-custom">
-              Mision
-            </h4>
+            <h4 class="mt-4 text-3xl font-bold text-pink-custom">Mision</h4>
             <p
-              class="md:w-[34%] px-4 md:px-0 text-center mx-auto mt-4 text-lg md:text-2xl text-light md:leading-10 text-text-color-2"
+              class="lg:w-[34%] px-4 lg:px-0 text-center mx-auto mt-4 text-lg font-light lg:leading-10 text-text-color-2"
             >
               Our Mission is to provide accessible and reliable insurance
               services that cater to all individuals, regardless of their
@@ -184,14 +188,12 @@
           <div class="text-center mx-auto">
             <img
               src="assets/vision.png"
-              class="w-1/3 md:w-[8%] mx-auto mt-12"
+              class="w-1/3 lg:w-[8%] mx-auto mt-12"
               alt=""
             />
-            <h4 class="mt-4 text-3xl md:text-5xl font-bold text-pink-custom">
-              Vision
-            </h4>
+            <h4 class="mt-4 text-3xl font-bold text-pink-custom">Vision</h4>
             <p
-              class="px-4 md:w-[34%] text-center mx-auto mt-4 text-lg md:text-2xl text-light md:leading-10 text-text-color-2"
+              class="lg:w-[34%] px-4 lg:px-0 text-center mx-auto mt-4 text-lg font-light lg:leading-10 text-text-color-2"
             >
               Our Vision is to create a world where everyone feels secure and
               supported
@@ -204,14 +206,14 @@
       <!-- hero bottom -->
       <section
         id="heroBottom"
-        class="bg-white py-8 md:py-16 px-8 md:px-24 rounded-t-3xl border border-gray-200"
+        class="bg-white py-8 lg:py-16 px-8 lg:px-24 rounded-t-3xl border border-gray-200"
       >
         <div>
-          <div class="block md:flex gap-36 justify-center">
-            <div class="md:mb-0 mb-16 md:w-[30%]">
+          <div class="block sm:flex lg:flex gap-36 justify-center">
+            <div class="lg:mb-0 mb-16 lg:w-[30%] sm:w-[40%]">
               <img
                 src="assets/mera.jpg"
-                class="w-full md:h-[550px] bg-contain bg-center rounded-lg"
+                class="w-full lg:h-[550px] bg-contain bg-center rounded-lg"
                 alt=""
               />
               <div class="mt-2">
@@ -237,10 +239,10 @@
                 </div>
               </div>
             </div>
-            <div class="md:w-[30%]">
+            <div class="lg:w-[30%] sm:w-[40%]">
               <img
                 src="assets/marcin.jpg"
-                class="w-full md:h-[550px] bg-contain bg-center rounded-lg"
+                class="w-full lg:h-[550px] bg-contain bg-center rounded-lg"
                 alt=""
               />
               <div class="mt-2">
@@ -267,13 +269,15 @@
               </div>
             </div>
           </div>
-          <div class="mt-24 border-t-2 border-[#E1E1E1] pt-4 pb-12 md:pb-24">
-            <h5 class="text-center text-4xl text-text-color my-8">
+          <div class="mt-24 border-t-2 border-[#E1E1E1] pt-4 pb-12 lg:pb-24">
+            <h5
+              class="text-center text-4xl text-text-color-2 my-8 font-semibold"
+            >
               The Story of
               <span class="font-bold text-pink-custom">KITASEMUA</span>
             </h5>
             <p
-              class="text-center tracking-widest md:leading-[38px] text-base md:text-lg font-light md:w-full md:overflow-y-visible overflow-y-scroll h-[250px] text-text-color-2"
+              class="text-center tracking-widest lg:leading-[38px] text-lg font-light lg:w-full lg:overflow-y-visible overflow-y-scroll h-[250px] text-text-color-2"
             >
               Mera Kwan grew up in a tight-knit community where many realized
               that traditional insurance models often left vulnerable
@@ -307,17 +311,17 @@
       <!-- footer -->
       <footer
         id="footer"
-        class="bg-text-color-2 border-t-2 border-t-text-color-2 z-10 relative"
+        class="bg-text-color-2 border-t-2 border-t-text-color-2 relative"
       >
-        <div class="px-4 md:px-24 mt-6 md:mt-12">
-          <div class="md:flex justify-between">
-            <div class="md:w-1/3 mb-4 md:mb-0">
+        <div class="px-4 lg:px-24 mt-6 lg:mt-12">
+          <div class="lg:flex justify-between">
+            <div class="lg:w-1/3 mb-4 lg:mb-0">
               <img
                 src="assets/whiteLogo.png"
-                class="md:w-[250px] w-1/2 text-center -ms-3"
+                class="lg:w-[250px] w-1/2 text-center -ms-3"
                 alt=""
               />
-              <p class="text-base md:text-lg text-text-color-3">
+              <p class="text-lg text-text-color-3">
                 KITASEMUA is a life insurance agency that collaborates with
                 renowned global insurance companies, enhancing services by
                 utilizing AI technology to simplify access to insurance for all
@@ -325,8 +329,8 @@
                 peace of mind in their lives.
               </p>
             </div>
-            <div class="flex md:block justify-between items-start">
-              <div class="md:mb-8">
+            <div class="flex lg:block justify-between items-start">
+              <div class="lg:mb-8">
                 <h5 class="text-white-custom">Follow Us</h5>
                 <div class="flex gap-6 mt-1">
                   <a href="#">
@@ -348,7 +352,7 @@
               </div>
               <div>
                 <h5 class="text-white-custom">Contact Us</h5>
-                <div class="md:flex gap-6">
+                <div class="lg:flex gap-6">
                   <a
                     href="#"
                     class="text-white flex gap-2 items-center hover:text-pink-custom"
@@ -365,18 +369,18 @@
                 </div>
               </div>
             </div>
-            <div class="mt-4 md:mt-0">
+            <div class="mt-4 lg:mt-0">
               <h5 class="text-white-custom">Newsletter</h5>
-              <div class="mt-2 md:mt-4">
+              <div class="mt-2 lg:mt-4">
                 <form action="#" class="inline-flex">
                   <input
                     type="email"
-                    class="border border-stone-300 w-full md:w-[300px] h-[50px] p-5 rounded-s-md"
+                    class="border border-stone-300 w-full lg:w-[300px] h-[50px] p-5 rounded-s-md"
                     placeholder="Input your email"
                   />
                   <button
                     type="submit"
-                    class="bg-pink-custom hover:bg-pink-hover h-[50px] md:w-1/3 px-3 text-white rounded-e-md md:text-base font-medium"
+                    class="bg-pink-custom hover:bg-pink-hover h-[50px] lg:w-1/3 px-3 text-white rounded-e-md lg:text-base font-medium"
                   >
                     Bergabung
                   </button>
