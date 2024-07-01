@@ -4,6 +4,9 @@
   animation: bounce 8s infinite;
 }
 
+.hero {
+}
+
 @keyframes bounce {
   0%,
   100% {
