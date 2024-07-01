@@ -694,20 +694,16 @@ video {
   height: 250px;
 }
 
+.h-\[480px\] {
+  height: 480px;
+}
+
 .h-\[50px\] {
   height: 50px;
 }
 
 .h-\[70px\] {
   height: 70px;
-}
-
-.h-\[550px\] {
-  height: 550px;
-}
-
-.h-\[480px\] {
-  height: 480px;
 }
 
 .w-1\/2 {
@@ -1015,12 +1011,12 @@ video {
   font-weight: 500;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .tracking-tight {
@@ -1107,11 +1103,11 @@ body {
 
 nav,
 header {
-  font-family: "Merriweather", serif;
+  font-family: "Merriweather", Georgia, serif;
 }
 
 main {
-  font-family: "Museo Sans", serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .hover\:bg-gray-100:hover {
@@ -1188,6 +1184,10 @@ main {
     display: none;
   }
 
+  .md\:h-\[480px\] {
+    height: 480px;
+  }
+
   .md\:h-\[50\%\] {
     height: 50%;
   }
@@ -1198,18 +1198,6 @@ main {
 
   .md\:h-full {
     height: 100%;
-  }
-
-  .md\:h-\[450px\] {
-    height: 450px;
-  }
-
-  .md\:h-\[30px\] {
-    height: 30px;
-  }
-
-  .md\:h-\[480px\] {
-    height: 480px;
   }
 
   .md\:w-1\/3 {
@@ -1240,6 +1228,14 @@ main {
     width: 30%;
   }
 
+  .md\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .md\:w-\[330px\] {
+    width: 330px;
+  }
+
   .md\:w-\[34\%\] {
     width: 34%;
   }
@@ -1258,34 +1254,6 @@ main {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-\[50\%\] {
-    width: 50%;
-  }
-
-  .md\:w-\[0\%\] {
-    width: 0%;
-  }
-
-  .md\:w-\[40\%\] {
-    width: 40%;
-  }
-
-  .md\:w-\[20\%\] {
-    width: 20%;
-  }
-
-  .md\:w-\[25\%\] {
-    width: 25%;
-  }
-
-  .md\:w-\[330px\] {
-    width: 330px;
-  }
-
-  .md\:w-\[3000px\] {
-    width: 3000px;
   }
 
   .md\:overflow-y-visible {
@@ -1361,11 +1329,6 @@ main {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .md\:leading-10 {
