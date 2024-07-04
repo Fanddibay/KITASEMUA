@@ -11,6 +11,7 @@ module.exports = {
         "pink-hover": "#FF008A",
         "pink-custom": "#F916A8",
         "white-custom": "#E1E1E1",
+        "grey-custom": "#B7B7B7",
       },
     },
   },
