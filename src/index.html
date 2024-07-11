@@ -124,47 +124,41 @@
 
     <!-- hero -->
     <header>
-      <section id="hero" class="hero pt-16 sm:pt-22 lg:pt-24">
-        <!-- lottiefiles -->
-        <lottie-player
-          src="https://lottie.host/48139d33-334a-4c9d-9d41-674482eab721/UlFpZRiPFB.json"
-          background="transparent"
-          speed="0.55"
-          class="mx-auto relative -z-10 w-full h-full"
-          loop
-          autoplay
-        >
-        </lottie-player>
-
-        <div
-          class="text-center -mt-[45%] md:-mt-[40%] lg:-mt-[48%] container mx-auto pb-24"
-        >
-          <!-- title text -->
-          <div class="px-2 lg:px-0">
-            <h3
-              class="heroText text-4xl lg:text-6xl lg:leading-[64px] tracking-tight font-medium text-text-color-2"
-            >
-              <span class="text-pink-custom">Asuransi</span> untuk KITASEMUA
-            </h3>
-            <p class="text-text-color-3 tracking-wide font-light mt-4 text-lg">
-              Asuransi Mudah, Terjangkau, Tanpa Ribet!
-            </p>
-          </div>
-          <!-- input -->
-          <div class="mt-8">
-            <form action="#" class="inline-flex">
-              <input
-                type="email"
-                class="border border-stone-300 lg:w-[450px] p-5 rounded-s-md"
-                placeholder="Masukan Email Anda"
-              />
-              <button
-                type="submit"
-                class="bg-pink-custom btn-shadow hover:bg-pink-hover lg:p-5 text-white rounded-e-md text-sm px-2 lg:text-xl font-medium"
+      <section id="hero" class="">
+        <div class="animationCloud relative">
+          <img src="assets/cloud.png" class="-z-10" alt="" />
+          <div
+            class="text-center container mx-auto hero pt-32 sm:pt-32 md:pt-36 xl:pt-64 relative"
+          >
+            <!-- title text -->
+            <div class="px-2 lg:px-0">
+              <h3
+                class="heroText text-4xl lg:text-6xl lg:leading-[64px] tracking-tight font-medium text-text-color-2"
               >
-                Begabung
-              </button>
-            </form>
+                <span class="text-pink-custom">Asuransi</span> untuk KITASEMUA
+              </h3>
+              <p
+                class="text-text-color-3 tracking-wide font-light mt-4 text-lg"
+              >
+                Asuransi Mudah, Terjangkau, Tanpa Ribet!
+              </p>
+            </div>
+            <!-- input -->
+            <div class="mt-8">
+              <form action="#" class="inline-flex">
+                <input
+                  type="email"
+                  class="border border-stone-300 lg:w-[450px] p-5 rounded-s-md"
+                  placeholder="Masukan Email Anda"
+                />
+                <button
+                  type="submit"
+                  class="bg-pink-custom btn-shadow hover:bg-pink-hover lg:p-5 text-white rounded-e-md text-sm px-2 lg:text-xl font-medium"
+                >
+                  Begabung
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -173,7 +167,7 @@
 
     <main>
       <!-- animation -->
-      <section id="animation" class="mt-24 lg:mt-52">
+      <section id="animation">
         <!-- lottiefiles -->
         <lottie-player
           src="https://lottie.host/e2efb7f5-401b-4581-9327-a4881e493ccf/IKAgcah3vs.json"
@@ -192,17 +186,21 @@
         <div
           class="bg-white px-6 lg:px-0 pt-8 lg:pt-12 text-center border-t-2 border-text-color-1 -mb-2 lg:-mb-4"
         >
-          <h5 class="font-normal text-xl lg:text-2xl text-text-color-2">
+          <h5 class="font-normal text-base lg:text-2xl text-text-color-2">
             Solusi asuransi terbaik untuk
           </h5>
-          <p class="font-bold text-4xl lg:text-5xl text-text-color-2">
+          <p class="font-bold text-xl lg:text-5xl text-text-color-2">
             Anda dan Keluarga
           </p>
-          <img
-            src="assets/hero_bottomId.png"
-            class="lg:w-[60%] lg:h-full h-[220px] mt-6 lg:mt-24 mx-auto"
-            alt=""
-          />
+          <lottie-player
+            src="https://lottie.host/288db75f-c9d7-4c0d-ae9f-07aa6892c77d/1HG4RxWBaf.json"
+            background="transparent"
+            speed="1"
+            class="mx-auto relative"
+            loop
+            autoplay
+          >
+          </lottie-player>
         </div>
       </section>
       <!-- end herro bottom -->
@@ -217,14 +215,16 @@
         class="bg-text-color-2 border-t-2 border-t-text-color-2 relative w-full"
       >
         <div class="px-8 w-full mt-6 lg:mt-12 container mx-auto">
-          <div class="md:block block sm:block lg:flex lg:justify-between">
+          <div
+            class="md:block block sm:block lg:flex lg:justify-between md:gap-4"
+          >
             <div class="w-full lg:w-1/3 mb-4 lg:mb-0">
               <img
                 src="assets/whiteLogo.png"
                 class="lg:w-[250px] w-1/2 text-center -ms-3"
                 alt=""
               />
-              <p class="text-base text-grey-custom">
+              <p class="text-sm text-justify text-grey-custom">
                 KITASEMUA adalah agen asuransi jiwa yang bekerja sama dengan
                 perusahaan asuransi ternama dunia, menyempurnakan layanan dengan
                 menggunakan teknologi AI untuk mempermudah akses asuransi bagi

@@ -1,11 +1,9 @@
-.animationSun img {
+/* .animationSun img {
   position: relative;
   z-index: -20 !important;
   animation: bounce 8s infinite;
 }
 
-.hero {
-}
 
 @keyframes bounce {
   0%,
@@ -25,30 +23,29 @@
     transform: translateY(-30px);
     animation-timing-function: ease-in;
   }
-}
+} */
 
 .animationCloud {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 100vh;
   overflow: hidden !important;
-  z-index: -10 !important;
 }
 
 .animationCloud img {
   position: absolute;
   left: 100%;
   width: 100%; /* Sesuaikan dengan ukuran awan */
-  height: auto;
+  height: 100vh !important;
   transform: translateY(-50%);
-  background-repeat: repeat-x;
+  background-repeat: repeat-x !important;
   background-size: contain;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 3s;
   animation-delay: -30s;
   opacity: 1;
-  animation: moveClouds 25s linear infinite;
+  animation: moveClouds 55s linear infinite;
 }
 
 @keyframes moveClouds {
