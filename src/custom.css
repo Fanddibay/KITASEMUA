@@ -25,6 +25,12 @@
   }
 } */
 
+/* @media only screen and (max-width: 600px) {
+  .handphone div.main div.animation svg {
+    height: 650px !important;
+    width: 450px !important ;
+  }
+} */
 .animationCloud {
   width: 100%;
   overflow: hidden !important;
