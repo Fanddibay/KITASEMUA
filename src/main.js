@@ -56,11 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const lottiePlayer = document.querySelector(".lottie-player");
   const staticImage = document.querySelector(".static-img");
 
-  const checkLottieLoaded = setInterval(() => {
-    if (lottiePlayer.shadowRoot.querySelector("canvas")) {
-      clearInterval(checkLottieLoaded);
-      staticImage.classList.add("hidden");
-      lottiePlayer.classList.remove("hidden");
-    }
-  }, 100); // Check every 100ms
+  lottiePlayer.addEventListener("load", () => {
+    staticImage.classList.add("hidden");
+    btnLottie.classList.remove("hidden");
+  });
 });
