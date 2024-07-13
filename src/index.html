@@ -68,7 +68,7 @@
     <!-- navbar dekstop-->
     <nav
       id="navbar"
-      class="bg-white py-3 px-8 fixed top-0 left-0 right-0 z-10 lg:block hidden"
+      class="z-50 bg-white py-3 px-8 fixed top-0 left-0 right-0 z-10 lg:block hidden"
     >
       <div class="justify-between flex items-center">
         <div>
@@ -182,11 +182,11 @@
       <!-- end animation -->
 
       <!-- hero bottom dekstop -->
-      <section id="" class="container mx-auto -z-10 relative">
+      <section id="" class="container mx-auto z-10 relative">
         <div
           class="bg-white px-6 lg:px-0 pt-8 lg:pt-12 text-center border-t-2 border-text-color-1 -mb-2 lg:-mb-4"
         >
-          <div class="z-[1] relative">
+          <div class="z-[5] relative">
             <h5 class="font-normal text-lg sm:text-2xl text-text-color-2">
               Solusi asuransi terbaik untuk
             </h5>
@@ -194,35 +194,34 @@
               Anda dan Keluarga
             </p>
           </div>
-
-          <dotlottie-player
-            src="assets/mobile_dk_id.json"
-            background="transparent"
-            speed="1"
-            autoplay
-            class="mx-auto hidden md:block md:-mt-24 lg:-mt-32"
-          ></dotlottie-player>
-
-          <dotlottie-player
-            src="assets/HP_ID.json"
-            background="transparent"
-            speed="1"
-            autoplay
-            class="mx-auto block md:hidden -mt-44 relative"
-          ></dotlottie-player>
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-          <lottie-player
-            src="https://lottie.host/55e7a5c1-ae9e-473c-9844-8d9215ad5d20/plH26t48J7.json"
-            background="##FFFFFF"
-            speed="1"
-            style="width: 300px; height: 300px"
-            loop
-            autoplay
-            direction="1"
-            mode="normal"
-          ></lottie-player>
         </div>
       </section>
+      <dotlottie-player
+        src="assets/mobile_dk_id.json"
+        background="transparent"
+        speed="1"
+        autoplay
+        class="mx-auto hidden md:block md:-mt-24 lg:-mt-32 -z-10 relative"
+      ></dotlottie-player>
+
+      <dotlottie-player
+        src="assets/HP_ID.json"
+        background="transparent"
+        speed="1"
+        autoplay
+        class="mx-auto block md:hidden -mt-44 relative -z-10"
+      ></dotlottie-player>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://lottie.host/55e7a5c1-ae9e-473c-9844-8d9215ad5d20/plH26t48J7.json"
+        background="##FFFFFF"
+        speed="1"
+        style="width: 100%"
+        loop
+        autoplay
+        direction="1"
+        mode="normal"
+      ></lottie-player>
       <!-- end herro bottom -->
 
       <!-- hero bottom tablet -->
