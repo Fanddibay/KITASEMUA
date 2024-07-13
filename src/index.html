@@ -15,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
   </head>
   <body>
     <!-- navbar mobile -->
@@ -169,21 +170,13 @@
       <!-- animation -->
       <section id="animation">
         <!-- lottiefiles -->
-
-        <div class="container">
+        <div class="container mx-auto">
           <img
             src="assets/hero_bottom.png"
             alt="Static Image"
-            class="static-img"
+            class="static-img block mx-auto"
           />
-          <dotlottie-player
-            src="https://lottie.host/ed68ef03-5687-4edd-88e1-b50e9c46ead6/bW3RvQeJGi.json"
-            loop
-            background="transparent"
-            speed="1"
-            autoplay
-            class="hidden mx-auto w-100 lottie-player"
-          ></dotlottie-player>
+          <div id="lottie-container" class="hidden mx-auto w-full"></div>
         </div>
       </section>
 

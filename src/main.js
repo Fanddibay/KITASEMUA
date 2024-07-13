@@ -53,11 +53,19 @@ window.addEventListener("scroll", function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const lottiePlayer = document.querySelector(".lottie-player");
   const staticImage = document.querySelector(".static-img");
+  const lottieContainer = document.getElementById("lottie-container");
 
-  lottiePlayer.addEventListener("load", () => {
+  const animation = lottie.loadAnimation({
+    container: lottieContainer, // the dom element that will contain the animation
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "https://lottie.host/ed68ef03-5687-4edd-88e1-b50e9c46ead6/bW3RvQeJGi.json", // the path to the animation json
+  });
+
+  animation.addEventListener("DOMLoaded", () => {
     staticImage.classList.add("hidden");
-    btnLottie.classList.remove("hidden");
+    lottieContainer.classList.remove("hidden");
   });
 });
