@@ -169,12 +169,23 @@
       <!-- animation -->
       <section id="animation">
         <!-- lottiefiles -->
-        <video width="100%" loop autoplay>
-          <source src="assets/animasi1.mp4" type="video/mp4" />
-          <source src="assets/animasi1.mp4" type="video/ogg" />
-          Your browser does not support the video tag.
-        </video>
+        <div class="container">
+          <img
+            src="assets/hero_bottom.png"
+            alt="Static Image"
+            class="static-image"
+          />
+          <dotlottie-player
+            src="https://lottie.host/ed68ef03-5687-4edd-88e1-b50e9c46ead6/bW3RvQeJGi.json"
+            loop
+            background="transparent"
+            speed="1"
+            autoplay
+            class="lottie-player mx-auto w-100"
+          ></dotlottie-player>
+        </div>
       </section>
+
       <!-- end animation -->
 
       <!-- hero bottom dekstop -->
@@ -192,12 +203,12 @@
           </div>
         </div>
       </section>
-      <video width="100%" class="hidden md:block -mt-20" loop autoplay>
+      <video width="100%" class="hidden md:block -mt-20" autoplay="true">
         <source src="assets/hp_web_id.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <video width="100%" class="block md:hidden -mt-12" loop autoplay>
+      <video width="100%" class="block md:hidden -mt-12" autoplay="true">
         <source src="assets/hp_mobile_id.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -307,5 +318,6 @@
     src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
     type="module"
   ></script>
+
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </html>

@@ -51,3 +51,13 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("navbar-scrolled");
   }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lottiePlayer = document.querySelector(".lottie-player");
+  const staticImage = document.querySelector(".static-image");
+
+  lottiePlayer.addEventListener("load", () => {
+    staticImage.style.display = "none";
+    lottiePlayer.style.display = "block";
+  });
+});
