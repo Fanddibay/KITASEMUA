@@ -15,14 +15,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
   </head>
 
-  <style>
-    .handphone {
-      width: 750px;
-      height: 650px;
-    }
-  </style>
   <body>
     <!-- navbar mobile -->
     <nav
@@ -175,12 +170,14 @@
       <!-- animation -->
       <section id="animation">
         <!-- lottiefiles -->
-        <!-- lottiefiles -->
-        <video width="100%" loop autoplay="true">
-          <source src="assets/animasi1.mp4" type="video/mp4" />
-          <source src="assets/animasi1.mp4" type="video/ogg" />
-          Your browser does not support the video tag.
-        </video>
+        <div class="container mx-auto">
+          <img
+            src="assets/animasi1.bmp"
+            alt="Static Image"
+            class="static-img block mx-auto"
+          />
+          <div id="lottie-container" class="hidden mx-auto w-full"></div>
+        </div>
       </section>
       <!-- end animation -->
 
@@ -199,14 +196,27 @@
           </div>
         </div>
       </section>
-      <video width="100%" class="hidden md:block -mt-20" autoplay="true">
-        <source src="assets/hp_web_en.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <video width="100%" class="block md:hidden -mt-12" autoplay="true">
-        <source src="assets/hp_mobile_en.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <!-- web animation  -->
+      <div class="mx-auto md:block hidden">
+        <img
+          src="assets/mobile_webEN.png"
+          alt="Static Image"
+          class="static-img_En block mx-auto -mt-20"
+        />
+        <div id="lottie-containerEn" class="hidden mx-auto w-full -mt-20"></div>
+      </div>
+      <!-- mobile animation -->
+      <div class="mx-auto md:hidden block">
+        <img
+          src="assets/mobileEn.png"
+          alt="Static Image"
+          class="static-img_MobileEn block mx-auto -mt-12"
+        />
+        <div
+          id="lottie-containerMobileEn"
+          class="hidden mx-auto w-full -mt-12"
+        ></div>
+      </div>
 
       <!-- end herro bottom -->
 
