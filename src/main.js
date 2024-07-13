@@ -54,10 +54,13 @@ window.addEventListener("scroll", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const lottiePlayer = document.querySelector(".lottie-player");
-  const staticImage = document.querySelector(".static-image");
+  const staticImage = document.querySelector(".static-img");
 
-  lottiePlayer.addEventListener("load", () => {
-    staticImage.style.display = "none";
-    lottiePlayer.style.display = "block";
-  });
+  const checkLottieLoaded = setInterval(() => {
+    if (lottiePlayer.shadowRoot.querySelector("canvas")) {
+      clearInterval(checkLottieLoaded);
+      staticImage.classList.add("hidden");
+      lottiePlayer.classList.remove("hidden");
+    }
+  }, 100); // Check every 100ms
 });

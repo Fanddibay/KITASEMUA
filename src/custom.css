@@ -36,15 +36,6 @@
   overflow: hidden !important;
 }
 
-.static-image,
-.lottie-player {
-  width: 100%;
-  display: block;
-}
-.lottie-player {
-  display: none;
-}
-
 .animationCloud img {
   position: absolute;
   left: 100%;
