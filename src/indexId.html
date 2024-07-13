@@ -26,7 +26,7 @@
   <body>
     <!-- navbar mobile -->
     <nav
-      class="bg-white py-3 px-1 block lg:hidden w-full fixed z-10"
+      class="bg-white py-3 px-1 block lg:hidden w-full fixed z-50"
       id="navbar1"
     >
       <div class="flex justify-between items-center">
@@ -199,101 +199,21 @@
           </div>
         </div>
       </section>
-      <dotlottie-player
-        src="assets/mobile_dk_en.json"
-        background="transparent"
-        speed="1"
-        autoplay
-        class="mx-auto hidden md:block md:-mt-12 relative lg:-mt-32 -z-10"
-      ></dotlottie-player>
-      <dotlottie-player
-        src="assets/HP_EN.json"
-        background="transparent"
-        speed="1"
-        autoplay
-        class="mx-auto block md:hidden -mt-44 relative -z-10"
-      ></dotlottie-player>
-      <lottie-player
-        src="https://lottie.host/55e7a5c1-ae9e-473c-9844-8d9215ad5d20/plH26t48J7.json"
-        background="##FFFFFF"
-        speed="1"
-        style="width: 100%"
-        loop
-        autoplay
-        direction="1"
-        mode="normal"
-      ></lottie-player>
-      <!-- end herro bottom -->
+      <video width="100%" class="hidden md:block -mt-20" loop autoplay>
+        <source src="assets/hp_web_en.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <video width="100%" class="block md:hidden -mt-12" loop autoplay>
+        <source src="assets/hp_mobile_en.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-      <!-- hero bottom tablet -->
-      <!-- <section
-        id=""
-        class="container mx-auto overflow-hidden hidden md:block lg:hidden"
-      >
-        <div
-          class="bg-white px-6 lg:px-0 pt-8 lg:pt-12 text-center border-t-2 border-text-color-1 -mb-2"
-        >
-          <div class="z-[1] relative">
-            <h5 class="font-normal text-2xl text-text-color-2">
-              One-Click Insurance, Easy Claims.
-            </h5>
-            <p class="font-semibold text-5xl text-text-color-2">
-              Simple and Affordable
-            </p>
-          </div>
-
-          <dotlottie-player
-            src="https://lottie.host/e16f57e8-ac4f-45f1-8cfb-c714b8cd399b/StyhQfqaNw.json"
-            background="transparent"
-            speed="1"
-            autoplay
-            class="mx-auto lg:w-100"
-            style="
-              width: 160%;
-              height: auto;
-              margin-left: -220px;
-              margin-top: -30px;
-            "
-          ></dotlottie-player>
-        </div>
-      </section> -->
-      <!-- end herro bottom -->
-
-      <!-- hero bottom mobile -->
-      <!-- <section id="" class="container mx-auto overflow-hidden block md:hidden">
-        <div
-          class="bg-white px-6 lg:px-0 pt-8 lg:pt-12 text-center border-t-2 border-text-color-1 -mb-2"
-        >
-          <div class="z-[1] relative">
-            <h5 class="font-normal text-xl text-text-color-2">
-              One-Click Insurance, Easy Claims.
-            </h5>
-            <p class="font-semibold text-3xl text-text-color-2">
-              Simple and Affordable
-            </p>
-          </div>
-
-          <dotlottie-player
-            src="https://lottie.host/e16f57e8-ac4f-45f1-8cfb-c714b8cd399b/StyhQfqaNw.json"
-            background="transparent"
-            speed="1"
-            autoplay
-            class="mx-auto lg:w-100"
-            style="
-              width: 160%;
-              height: auto;
-              margin-left: -100px;
-              margin-top: -30px;
-            "
-          ></dotlottie-player>
-        </div>
-      </section> -->
       <!-- end herro bottom -->
 
       <!-- footer -->
       <footer
         id="footer"
-        class="bg-text-color-2 border-t-2 border-t-text-color-2 relative -mt-24 md:mt-0"
+        class="bg-text-color-2 border-t-2 border-t-text-color-2 relative md:mt-0"
       >
         <div class="px-8 mt-6 lg:mt-12 container mx-auto">
           <div

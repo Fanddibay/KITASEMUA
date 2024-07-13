@@ -19,7 +19,7 @@
   <body>
     <!-- navbar mobile -->
     <nav
-      class="bg-white py-3 px-1 block lg:hidden fixed z-10 w-full"
+      class="bg-white py-3 px-1 block lg:hidden fixed z-50 w-full"
       id="navbar1"
     >
       <div class="flex justify-between items-center">
@@ -192,106 +192,21 @@
           </div>
         </div>
       </section>
-      <dotlottie-player
-        src="assets/mobile_dk_id.json"
-        background="transparent"
-        speed="1"
-        autoplay
-        class="mx-auto hidden md:block md:-mt-24 lg:-mt-32 -z-10 relative"
-      ></dotlottie-player>
+      <video width="100%" class="hidden md:block -mt-20" loop autoplay>
+        <source src="assets/hp_web_id.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-      <dotlottie-player
-        src="assets/HP_ID.json"
-        background="transparent"
-        speed="1"
-        autoplay
-        class="mx-auto block md:hidden -mt-44 relative -z-10"
-      ></dotlottie-player>
+      <video width="100%" class="block md:hidden -mt-12" loop autoplay>
+        <source src="assets/hp_mobile_id.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-      <lottie-player
-        src="https://lottie.host/55e7a5c1-ae9e-473c-9844-8d9215ad5d20/plH26t48J7.json"
-        background="##FFFFFF"
-        speed="1"
-        style="width: 100%"
-        loop
-        autoplay
-        direction="1"
-        mode="normal"
-      ></lottie-player>
-      <!-- end herro bottom -->
-
-      <!-- hero bottom tablet -->
-      <!-- <section
-        id=""
-        class="container mx-auto overflow-hidden hidden md:block lg:hidden"
-      >
-        <div
-          class="bg-white px-6 lg:px-0 pt-8 lg:pt-12 text-center border-t-2 border-text-color-1 -mb-2"
-        >
-          <div class="z-[1] relative">
-            <h5 class="font-normal text-2xl text-text-color-2">
-              Solusi asuransi terbaik untuk
-            </h5>
-            <p class="font-semibold text-5xl text-text-color-2">
-              Anda dan Keluarga
-            </p>
-          </div>
-
-          <dotlottie-player
-            src="https://lottie.host/288db75f-c9d7-4c0d-ae9f-07aa6892c77d/1HG4RxWBaf.json"
-            background="transparent"
-            speed="1"
-            autoplay
-            class="mx-auto lg:w-100"
-            style="
-              width: 160%;
-              height: auto;
-              margin-left: -220px;
-              margin-top: -30px;
-            "
-          ></dotlottie-player>
-        </div>
-      </section> -->
-      <!-- end herro bottom -->
-
-      <!-- hero bottom mobile -->
-      <!-- <section
-        id=""
-        class="container mx-auto overflow-hidden block md:hidden lg:hidden"
-      >
-        <div
-          class="bg-white px-6 lg:px-0 pt-8 lg:pt-12 text-center border-t-2 border-text-color-1 -mb-2"
-        >
-          <div class="z-[1] relative">
-            <h5 class="font-normal text-xl text-text-color-2">
-              Solusi asuransi terbaik untuk
-            </h5>
-            <p class="font-semibold text-3xl text-text-color-2">
-              Anda dan Keluarga
-            </p>
-          </div>
-
-          <dotlottie-player
-            src="https://lottie.host/288db75f-c9d7-4c0d-ae9f-07aa6892c77d/1HG4RxWBaf.json"
-            background="transparent"
-            speed="1"
-            autoplay
-            class="mx-auto"
-            style="
-              width: 160%;
-              height: auto;
-              margin-left: -100px;
-              margin-top: -30px;
-            "
-          ></dotlottie-player>
-        </div>
-      </section> -->
-      <!-- end herro bottom -->
 
       <!-- footer -->
       <footer
         id="footer"
-        class="bg-text-color-2 -mt-24 md:mt-0 border-t-2 border-t-text-color-2 relative w-full"
+        class="bg-text-color-2 md:mt-0 border-t-2 border-t-text-color-2 relative w-full"
       >
         <div class="px-8 w-full mt-6 lg:mt-12 container mx-auto">
           <div
