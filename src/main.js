@@ -63,25 +63,25 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       imgClass: ".static-img_Id",
       containerId: "lottie-containerId",
-      path: "https://lottie.host/9345c83a-eb88-457b-88b2-c980b5d3a492/g7LGrA8ItC.json",
+      path: "https://lottie.host/98816cf7-2972-432d-8222-a724e8f20e84/nfSgqsrmPW.json",
       loop: false,
     },
     {
       imgClass: ".static-img_En",
       containerId: "lottie-containerEn",
-      path: "https://lottie.host/9054af9a-ccee-4ef1-b1ee-528c54889d7c/JgcZp5pin2.json",
+      path: "https://lottie.host/8ef8a2ad-54ac-4039-9023-07c1ec42262f/WI8SGhKUy8.json",
       loop: false,
     },
     {
       imgClass: ".static-img_MobileId",
       containerId: "lottie-containerMobileId",
-      path: "https://lottie.host/8326d84d-d6a8-47f3-a3ed-d4e9da6bed05/ZyYK4WaDT7.json",
+      path: "https://lottie.host/636156d3-1bf8-43a9-9a28-c76cbaf8e061/SdIycWk2Ry.json",
       loop: false,
     },
     {
       imgClass: ".static-img_MobileEn",
       containerId: "lottie-containerMobileEn",
-      path: "https://lottie.host/1aa08efd-a7c3-4c15-879c-14b7c20e195d/KeMtFMi6qj.json",
+      path: "https://lottie.host/b40ca5f5-d9ce-4791-b8bf-8510e4217f6e/cBTeHcpVyc.json",
       loop: false,
     },
   ];
@@ -104,3 +104,55 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function validateEmail(event) {
+  event.preventDefault();
+
+  const emailInput = document.querySelector('input[type="email"]');
+  const email = emailInput.value;
+  const successEmail = document.getElementById("successEmail");
+  const wrongEmail = document.getElementById("wrongEmail");
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isValidEmail = emailPattern.test(email);
+
+  if (isValidEmail) {
+    successEmail.classList.remove("hidden");
+    wrongEmail.classList.add("hidden");
+    setTimeout(() => {
+      successEmail.classList.add("hidden");
+    }, 5000);
+  } else {
+    wrongEmail.classList.remove("hidden");
+    successEmail.classList.add("hidden");
+    setTimeout(() => {
+      wrongEmail.classList.add("hidden");
+    }, 5000);
+  }
+}
+
+function validateEmailFooter(event) {
+  event.preventDefault();
+
+  const emailInput = document.querySelector('input[type="email"]');
+  const email = emailInput.value;
+  const successEmail = document.getElementById("successEmailFooter");
+  const wrongEmail = document.getElementById("wrongEmailFooter");
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const isValidEmail = emailPattern.test(email);
+
+  if (isValidEmail) {
+    successEmail.classList.remove("hidden");
+    wrongEmail.classList.add("hidden");
+    setTimeout(() => {
+      successEmail.classList.add("hidden");
+    }, 5000);
+  } else {
+    wrongEmail.classList.remove("hidden");
+    successEmail.classList.add("hidden");
+    setTimeout(() => {
+      wrongEmail.classList.add("hidden");
+    }, 5000);
+  }
+}

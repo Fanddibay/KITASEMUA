@@ -20,7 +20,7 @@
   <body>
     <!-- navbar mobile -->
     <nav
-      class="bg-white py-3 px-1 block lg:hidden fixed z-50 w-full"
+      class="bg-white py-1 px-1 block lg:hidden fixed z-50 w-full"
       id="navbar1"
     >
       <div class="flex justify-between items-center">
@@ -39,7 +39,7 @@
             <button
               id="dropdownButton1"
               type="button"
-              class="flex gap-2 justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-base font-medium text-text-color-2"
+              class="flex gap-2 justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-text-color-2"
               aria-expanded="true"
               aria-haspopup="true"
             >
@@ -69,7 +69,7 @@
     <!-- navbar dekstop-->
     <nav
       id="navbar"
-      class="z-50 bg-white py-3 px-8 fixed top-0 left-0 right-0 z-10 lg:block hidden"
+      class="z-50 bg-white py-1 px-8 fixed top-0 left-0 right-0 lg:block hidden"
     >
       <div class="justify-between flex items-center">
         <div>
@@ -95,7 +95,7 @@
           <button
             id="dropdownButton"
             type="button"
-            class="flex gap-2 justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-3 bg-white text-base font-medium text-text-color-2"
+            class="flex gap-2 justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-text-color-2"
             aria-expanded="true"
             aria-haspopup="true"
           >
@@ -146,7 +146,11 @@
             </div>
             <!-- input -->
             <div class="mt-8">
-              <form action="#" class="inline-flex">
+              <form
+                action="#"
+                class="inline-flex"
+                onsubmit="validateEmail(event)"
+              >
                 <input
                   type="email"
                   class="border border-stone-300 lg:w-[450px] p-5 rounded-s-md"
@@ -159,6 +163,23 @@
                   Begabung
                 </button>
               </form>
+              <p
+                class="mt-4 text-pink-custom font-light italic hidden"
+                id="successEmail"
+              >
+                Email Anda <span class="font-bold">berhasil terdaftar</span>.
+                Kami akan segera mengirimkan update terbaru.
+                <br />
+                Tetap terhubung untuk informasi dan kejutan menarik!
+              </p>
+              <p
+                class="mt-4 text-red-400 font-light italic hidden"
+                id="wrongEmail"
+              >
+                Format email Anda <span class="font-bold">tidak benar</span>.
+                Mohon periksa dan coba lagi. <br />Kami ingin memastikan Anda
+                mendapatkan semua informasi penting!
+              </p>
             </div>
           </div>
         </div>
@@ -287,19 +308,42 @@
             <div class="mt-4 lg:mt-0">
               <h5 class="text-grey-custom">Newsletter</h5>
               <div class="mt-2 lg:mt-4">
-                <form action="#" class="inline-flex">
+                <form
+                  action="#"
+                  class="inline-flex"
+                  onsubmit="validateEmailFooter(event)"
+                >
                   <input
                     type="email"
                     class="border border-stone-300 w-full lg:w-[300px] h-[50px] p-5 rounded-s-md"
-                    placeholder="Masukan Email Anda"
+                    placeholder="Input your email"
                   />
                   <button
                     type="submit"
                     class="bg-pink-custom hover:bg-pink-hover h-[50px] lg:w-1/3 px-3 text-white rounded-e-md lg:text-base font-medium"
                   >
-                    Bergabung
+                    Notify
                   </button>
                 </form>
+                <p
+                  class="mt-4 text-pink-custom font-light italic hidden"
+                  id="successEmailFooter"
+                >
+                  Email Anda
+                  <span class="font-bold">berhasil terdaftar</span>. <br />Kami
+                  akan segera mengirimkan update terbaru. <br />
+                  Tetap terhubung untuk informasi dan kejutan menarik!
+                </p>
+                <p
+                  class="mt-4 text-red-400 font-light italic hidden"
+                  id="wrongEmailFooter"
+                >
+                  Format email Anda <span class="font-bold">tidak benar</span>.
+                  Mohon periksa <br />dan coba lagi. Kami ingin memastikan Anda
+
+                  <br />
+                  mendapatkan semua informasi penting!
+                </p>
               </div>
             </div>
           </div>
