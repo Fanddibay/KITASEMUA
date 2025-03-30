@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
   background-color: #fff !important;
@@ -10,3 +8,4 @@ body {
 .heroText {
   font-family: "Merriweather", Georgia, serif;
 }
+
